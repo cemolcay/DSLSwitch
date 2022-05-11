@@ -11,6 +11,8 @@
 		C1B7321A282C22DE00A94769 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B73219282C22DE00A94769 /* ContentView.swift */; };
 		C1B7321C282C22E000A94769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B7321B282C22E000A94769 /* Assets.xcassets */; };
 		C1B7321F282C22E000A94769 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B7321E282C22E000A94769 /* Preview Assets.xcassets */; };
+		C1B73227282C231400A94769 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C1B73226282C231400A94769 /* AudioKit */; };
+		C1B73229282C27C300A94769 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B73228282C27C300A94769 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		C1B73219282C22DE00A94769 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1B7321B282C22E000A94769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1B7321E282C22E000A94769 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1B73228282C27C300A94769 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1B73227282C231400A94769 /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				C1B73217282C22DE00A94769 /* DSLSwitchApp.swift */,
 				C1B73219282C22DE00A94769 /* ContentView.swift */,
+				C1B73228282C27C300A94769 /* Data.swift */,
 				C1B7321B282C22E000A94769 /* Assets.xcassets */,
 				C1B7321D282C22E000A94769 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = DSLSwitch;
+			packageProductDependencies = (
+				C1B73226282C231400A94769 /* AudioKit */,
+			);
 			productName = DSLSwitch;
 			productReference = C1B73214282C22DE00A94769 /* DSLSwitch.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = C1B7320B282C22DE00A94769;
+			packageReferences = (
+				C1B73225282C231400A94769 /* XCRemoteSwiftPackageReference "audiokit" */,
+			);
 			productRefGroup = C1B73215282C22DE00A94769 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B7321A282C22DE00A94769 /* ContentView.swift in Sources */,
+				C1B73229282C27C300A94769 /* Data.swift in Sources */,
 				C1B73218282C22DE00A94769 /* DSLSwitchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +207,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +287,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +317,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C1B73225282C231400A94769 /* XCRemoteSwiftPackageReference "audiokit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/audiokit/audiokit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1B73226282C231400A94769 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1B73225282C231400A94769 /* XCRemoteSwiftPackageReference "audiokit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1B7320C282C22DE00A94769 /* Project object */;
 }
