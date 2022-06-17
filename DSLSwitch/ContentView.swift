@@ -17,13 +17,9 @@ struct DSLButton: View {
     }
 
     var body: some View {
-//        Button(title, action: action)
-//            .frame(maxWidth: .infinity, alignment: .leading)
-//            .buttonStyle(.plain)
         Button(action: action, label: {
             Text(title)
                 .foregroundColor(.primary)
-//                .frame(maxWidth: .infinity, alignment: .leading)
         })
     }
 }
