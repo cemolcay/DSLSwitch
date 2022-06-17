@@ -31,6 +31,7 @@ class DSLData: ObservableObject {
     @Published var midiOuts: [DSLMIDIOut] = []
 
     init() {
+        midi.addListener(self)
         updateMIDIOuts()
     }
 
