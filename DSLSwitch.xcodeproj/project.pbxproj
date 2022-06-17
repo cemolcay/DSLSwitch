@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C1B73214282C22DE00A94769 /* DSLSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSLSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B73214282C22DE00A94769 /* DSL Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSL Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B73217282C22DE00A94769 /* DSLSwitchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSLSwitchApp.swift; sourceTree = "<group>"; };
 		C1B73219282C22DE00A94769 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1B7321B282C22E000A94769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		C1B73215282C22DE00A94769 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C1B73214282C22DE00A94769 /* DSLSwitch.app */,
+				C1B73214282C22DE00A94769 /* DSL Switch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +92,7 @@
 				C1B73226282C231400A94769 /* AudioKit */,
 			);
 			productName = DSLSwitch;
-			productReference = C1B73214282C22DE00A94769 /* DSLSwitch.app */;
+			productReference = C1B73214282C22DE00A94769 /* DSL Switch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemolcay.DSLSwitch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DSL Switch";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,7 +324,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemolcay.DSLSwitch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DSL Switch";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
