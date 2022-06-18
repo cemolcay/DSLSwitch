@@ -6,26 +6,77 @@
 //
 
 import SwiftUI
+import WatchConnectivity
 
-struct DSLButton: View {
-    var title: String
-    var action: () -> Void
+class SessionManager: NSObject, WCSessionDelegate {
+    let session: WCSession
+    let data: DSLData
 
-    init(_ title: String, action: @escaping () -> Void) {
-        self.title = title
-        self.action = action
+    override init() {
+        session = WCSession.default
+        data = DSLData()
+        super.init()
+        if WCSession.isSupported() {
+            session.delegate = self
+            session.activate()
+        }
     }
 
-    var body: some View {
-        Button(action: action, label: {
-            Text(title)
-                .foregroundColor(.primary)
-        })
+    func handleMessage(message: [String: Any]) {
+        guard let controlString = message["control"] as? String,
+              let control = ControlMessage(rawValue: controlString)
+        else { return }
+        switch control {
+        case .clean: data.clean()
+        case .crunch: data.crunch()
+        case .od1: data.od1()
+        case .od2: data.od2()
+        case .fxOn: data.fxLoopOn()
+        case .fxOff: data.fxLoopOff()
+        case .fxToggle: data.toggleFXLoop()
+        case .master1: data.master1()
+        case .master2: data.master2()
+        case .masterToggle: data.toggleMaster()
+        }
+    }
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        handleMessage(message: message)
+    }
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        handleMessage(message: message)
+    }
+
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        handleMessage(message: userInfo)
+    }
+
+    func session(_ session: WCSession, didFinish userInfoTransfer: WCSessionUserInfoTransfer, error: Error?) {
+        handleMessage(message: userInfoTransfer.userInfo)
+    }
+
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        return
+    }
+
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        return
+    }
+
+    func sessionDidDeactivate(_ session: WCSession) {
+        session.activate()
     }
 }
 
 struct ContentView: View {
-    @ObservedObject var data = DSLData()
+    let session: SessionManager
+    @ObservedObject var data: DSLData
+
+    init() {
+        session = SessionManager()
+        data = session.data
+    }
 
     var body: some View {
         List {
@@ -36,9 +87,9 @@ struct ContentView: View {
                 DSLButton("Ultra Gain 2") { data.od2() }
             }
             Section(header: Text("FX Loop")) {
-                DSLButton("On") { data.loopOn() }
-                DSLButton("Off") { data.loopOff() }
-                DSLButton("Toggle") { data.toggleLoop() }
+                DSLButton("On") { data.fxLoopOn() }
+                DSLButton("Off") { data.fxLoopOff() }
+                DSLButton("Toggle") { data.toggleFXLoop() }
             }
             Section(header: Text("Master")) {
                 DSLButton("Master 1") { data.master1() }
