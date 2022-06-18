@@ -52,11 +52,11 @@ class DSLData: ObservableObject {
     }
 
     func loopOn() {
-        midi.sendEvent(MIDIEvent(controllerChange: 13, value: 0, channel: MIDIChannel(midiChannel)))
+        midi.sendEvent(MIDIEvent(controllerChange: 13, value: 1, channel: MIDIChannel(midiChannel)))
     }
 
     func loopOff() {
-        midi.sendEvent(MIDIEvent(controllerChange: 13, value: 1, channel: MIDIChannel(midiChannel)))
+        midi.sendEvent(MIDIEvent(controllerChange: 13, value: 0, channel: MIDIChannel(midiChannel)))
     }
 
     func toggleLoop() {
