@@ -13,7 +13,61 @@
 		C1B7321F282C22E000A94769 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B7321E282C22E000A94769 /* Preview Assets.xcassets */; };
 		C1B73227282C231400A94769 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C1B73226282C231400A94769 /* AudioKit */; };
 		C1B73229282C27C300A94769 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B73228282C27C300A94769 /* Data.swift */; };
+		C1E1ED65285E1CD000F09BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E1ED64285E1CD000F09BBA /* Assets.xcassets */; };
+		C1E1ED6B285E1CD000F09BBA /* DSL Switch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C1E1ED6A285E1CD000F09BBA /* DSL Switch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C1E1ED70285E1CD000F09BBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E1ED6F285E1CD000F09BBA /* ContentView.swift */; };
+		C1E1ED72285E1CD000F09BBA /* DSLSwitchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E1ED71285E1CD000F09BBA /* DSLSwitchApp.swift */; };
+		C1E1ED74285E1CD000F09BBA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E1ED73285E1CD000F09BBA /* ComplicationController.swift */; };
+		C1E1ED76285E1CD100F09BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E1ED75285E1CD100F09BBA /* Assets.xcassets */; };
+		C1E1ED79285E1CD100F09BBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E1ED78285E1CD100F09BBA /* Preview Assets.xcassets */; };
+		C1E1ED7D285E1CD100F09BBA /* DSLSwitch Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C1E1ED62285E1CCE00F09BBA /* DSLSwitch Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C1E1ED87285E218F00F09BBA /* DSLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E1ED86285E218F00F09BBA /* DSLButton.swift */; };
+		C1E1ED88285E218F00F09BBA /* DSLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E1ED86285E218F00F09BBA /* DSLButton.swift */; };
+		C1E1ED91285E295200F09BBA /* ControlMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E1ED90285E295200F09BBA /* ControlMessage.swift */; };
+		C1E1ED92285E295200F09BBA /* ControlMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E1ED90285E295200F09BBA /* ControlMessage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1E1ED6C285E1CD000F09BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1B7320C282C22DE00A94769 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1E1ED69285E1CD000F09BBA;
+			remoteInfo = "DSL Switch WatchKit Extension";
+		};
+		C1E1ED7B285E1CD100F09BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1B7320C282C22DE00A94769 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1E1ED61285E1CCE00F09BBA;
+			remoteInfo = "DSL Switch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1E1ED7E285E1CD100F09BBA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C1E1ED7D285E1CD100F09BBA /* DSLSwitch Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E1ED81285E1CD100F09BBA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C1E1ED6B285E1CD000F09BBA /* DSL Switch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C1B73214282C22DE00A94769 /* DSL Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSL Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +76,17 @@
 		C1B7321B282C22E000A94769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1B7321E282C22E000A94769 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1B73228282C27C300A94769 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C1E1ED62285E1CCE00F09BBA /* DSLSwitch Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSLSwitch Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E1ED64285E1CD000F09BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1E1ED6A285E1CD000F09BBA /* DSL Switch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DSL Switch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E1ED6F285E1CD000F09BBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C1E1ED71285E1CD000F09BBA /* DSLSwitchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSLSwitchApp.swift; sourceTree = "<group>"; };
+		C1E1ED73285E1CD000F09BBA /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C1E1ED75285E1CD100F09BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1E1ED78285E1CD100F09BBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1E1ED7A285E1CD100F09BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1E1ED86285E218F00F09BBA /* DSLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSLButton.swift; sourceTree = "<group>"; };
+		C1E1ED90285E295200F09BBA /* ControlMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1E1ED67285E1CD000F09BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -40,7 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				C1B73216282C22DE00A94769 /* DSLSwitch */,
+				C1E1ED63285E1CCF00F09BBA /* DSLSwitch Watch */,
+				C1E1ED6E285E1CD000F09BBA /* DSL Switch WatchKit Extension */,
 				C1B73215282C22DE00A94769 /* Products */,
+				C1E1ED8A285E21F600F09BBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				C1B73214282C22DE00A94769 /* DSL Switch.app */,
+				C1E1ED62285E1CCE00F09BBA /* DSLSwitch Watch.app */,
+				C1E1ED6A285E1CD000F09BBA /* DSL Switch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +134,9 @@
 			children = (
 				C1B73217282C22DE00A94769 /* DSLSwitchApp.swift */,
 				C1B73219282C22DE00A94769 /* ContentView.swift */,
+				C1E1ED86285E218F00F09BBA /* DSLButton.swift */,
 				C1B73228282C27C300A94769 /* Data.swift */,
+				C1E1ED90285E295200F09BBA /* ControlMessage.swift */,
 				C1B7321B282C22E000A94769 /* Assets.xcassets */,
 				C1B7321D282C22E000A94769 /* Preview Content */,
 			);
@@ -72,6 +151,42 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C1E1ED63285E1CCF00F09BBA /* DSLSwitch Watch */ = {
+			isa = PBXGroup;
+			children = (
+				C1E1ED64285E1CD000F09BBA /* Assets.xcassets */,
+			);
+			path = "DSLSwitch Watch";
+			sourceTree = "<group>";
+		};
+		C1E1ED6E285E1CD000F09BBA /* DSL Switch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C1E1ED6F285E1CD000F09BBA /* ContentView.swift */,
+				C1E1ED71285E1CD000F09BBA /* DSLSwitchApp.swift */,
+				C1E1ED73285E1CD000F09BBA /* ComplicationController.swift */,
+				C1E1ED75285E1CD100F09BBA /* Assets.xcassets */,
+				C1E1ED7A285E1CD100F09BBA /* Info.plist */,
+				C1E1ED77285E1CD100F09BBA /* Preview Content */,
+			);
+			path = "DSL Switch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C1E1ED77285E1CD100F09BBA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C1E1ED78285E1CD100F09BBA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1E1ED8A285E21F600F09BBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,10 +197,12 @@
 				C1B73210282C22DE00A94769 /* Sources */,
 				C1B73211282C22DE00A94769 /* Frameworks */,
 				C1B73212282C22DE00A94769 /* Resources */,
+				C1E1ED7E285E1CD100F09BBA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C1E1ED7C285E1CD100F09BBA /* PBXTargetDependency */,
 			);
 			name = DSLSwitch;
 			packageProductDependencies = (
@@ -95,6 +212,42 @@
 			productReference = C1B73214282C22DE00A94769 /* DSL Switch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C1E1ED61285E1CCE00F09BBA /* DSLSwitch Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1E1ED85285E1CD100F09BBA /* Build configuration list for PBXNativeTarget "DSLSwitch Watch" */;
+			buildPhases = (
+				C1E1ED60285E1CCE00F09BBA /* Resources */,
+				C1E1ED81285E1CD100F09BBA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1E1ED6D285E1CD000F09BBA /* PBXTargetDependency */,
+			);
+			name = "DSLSwitch Watch";
+			productName = "DSL Switch";
+			productReference = C1E1ED62285E1CCE00F09BBA /* DSLSwitch Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C1E1ED69285E1CD000F09BBA /* DSL Switch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1E1ED84285E1CD100F09BBA /* Build configuration list for PBXNativeTarget "DSL Switch WatchKit Extension" */;
+			buildPhases = (
+				C1E1ED66285E1CD000F09BBA /* Sources */,
+				C1E1ED67285E1CD000F09BBA /* Frameworks */,
+				C1E1ED68285E1CD000F09BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DSL Switch WatchKit Extension";
+			packageProductDependencies = (
+			);
+			productName = "DSL Switch WatchKit Extension";
+			productReference = C1E1ED6A285E1CD000F09BBA /* DSL Switch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,11 +255,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					C1B73213282C22DE00A94769 = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					C1E1ED61285E1CCE00F09BBA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C1E1ED69285E1CD000F09BBA = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
@@ -127,6 +286,8 @@
 			projectRoot = "";
 			targets = (
 				C1B73213282C22DE00A94769 /* DSLSwitch */,
+				C1E1ED61285E1CCE00F09BBA /* DSLSwitch Watch */,
+				C1E1ED69285E1CD000F09BBA /* DSL Switch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +302,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1E1ED60285E1CCE00F09BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E1ED65285E1CD000F09BBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E1ED68285E1CD000F09BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E1ED79285E1CD100F09BBA /* Preview Assets.xcassets in Resources */,
+				C1E1ED76285E1CD100F09BBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,12 +327,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1B7321A282C22DE00A94769 /* ContentView.swift in Sources */,
+				C1E1ED91285E295200F09BBA /* ControlMessage.swift in Sources */,
+				C1E1ED87285E218F00F09BBA /* DSLButton.swift in Sources */,
 				C1B73229282C27C300A94769 /* Data.swift in Sources */,
 				C1B73218282C22DE00A94769 /* DSLSwitchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1E1ED66285E1CD000F09BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E1ED70285E1CD000F09BBA /* ContentView.swift in Sources */,
+				C1E1ED92285E295200F09BBA /* ControlMessage.swift in Sources */,
+				C1E1ED88285E218F00F09BBA /* DSLButton.swift in Sources */,
+				C1E1ED72285E1CD000F09BBA /* DSLSwitchApp.swift in Sources */,
+				C1E1ED74285E1CD000F09BBA /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1E1ED6D285E1CD000F09BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1E1ED69285E1CD000F09BBA /* DSL Switch WatchKit Extension */;
+			targetProxy = C1E1ED6C285E1CD000F09BBA /* PBXContainerItemProxy */;
+		};
+		C1E1ED7C285E1CD100F09BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1E1ED61285E1CCE00F09BBA /* DSLSwitch Watch */;
+			targetProxy = C1E1ED7B285E1CD100F09BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C1B73220282C22E000A94769 /* Debug */ = {
@@ -331,6 +536,120 @@
 			};
 			name = Release;
 		};
+		C1E1ED7F285E1CD100F09BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77Y3N48SNF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = DSL_Switch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "DSL Switch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.cemolcay.DSLSwitch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemolcay.DSLSwitch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C1E1ED80285E1CD100F09BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77Y3N48SNF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = DSL_Switch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "DSL Switch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.cemolcay.DSLSwitch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemolcay.DSLSwitch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		C1E1ED82285E1CD100F09BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DSL Switch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 77Y3N48SNF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DSL Switch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DSL Switch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemolcay.DSLSwitch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		C1E1ED83285E1CD100F09BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DSL Switch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 77Y3N48SNF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DSL Switch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DSL Switch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemolcay.DSLSwitch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,6 +667,24 @@
 			buildConfigurations = (
 				C1B73223282C22E000A94769 /* Debug */,
 				C1B73224282C22E000A94769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1E1ED84285E1CD100F09BBA /* Build configuration list for PBXNativeTarget "DSL Switch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E1ED82285E1CD100F09BBA /* Debug */,
+				C1E1ED83285E1CD100F09BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1E1ED85285E1CD100F09BBA /* Build configuration list for PBXNativeTarget "DSLSwitch Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E1ED7F285E1CD100F09BBA /* Debug */,
+				C1E1ED80285E1CD100F09BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
