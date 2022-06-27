@@ -9,7 +9,7 @@ Please note that the MIDI input doesn't work if a footswitch pedal is plugged in
 
 The app is very lightweigth written in SwiftUI and fully customisable. 
 
-Download the app for free:
+Download the app for free:  
 https://apps.apple.com/us/app/amp-switch-midi-footswitch/id1630403022
 
 ![alt tag](https://github.com/cemolcay/DSLSwitch/blob/main/demo.png?raw=true)
